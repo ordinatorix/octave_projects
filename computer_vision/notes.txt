@@ -1,0 +1,21 @@
+This document contains the note from my computer vision class
+
+----------------- 1A_L1 -------------------
+
+Definitions:
+Computer Photography(CP): is using the hardware to camture an image
+Computer Vision (CV): using a computer to interpret the contents of a picture
+
+Forms of computer vision:
+Object Recognition, Face recongnition, 3D modeling, 
+
+Kinect can produce depth images and skeleton image
+
+-----------------
+
+Vision is Not image Processing
+- the famous checkered board in shadow example, A&B are the same intensity
+- seeing is not the same as measuring properties of an image
+- seeing is building a percept of what is in the world based upon the measurements made by an imaging sensor.
+
+
