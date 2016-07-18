@@ -44,8 +44,9 @@ imshow(scale(lion, 1.5));
 
 #-------------------------------
 # Blend two images:
-result = 0.75*c_lion + 0.25*eye; #make sure ration summs to 1
+result = 0.60*c_lion + 0.40*eye; #make sure ration summs to 1
 imshow(result);
+#imwrite(result,'lion_eye.jpg');
 
 # Using a function
 function output = blend(a, b, alpha)

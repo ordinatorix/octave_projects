@@ -1,0 +1,30 @@
+%% Generalized Hough Transform: (see 2B-L3)
+
+  If orientation is known:
+    1- For each edge point; compute gradient direction (theta), retreive 
+    displacement vectors (r) to vote for reference point.
+    2- Peak in this hough space (X,Y) isreference point with most supporting 
+    edges.
+    
+   If orientation is unkown:
+    1- For each edge point;
+    for each possible master(theta*), compute the gradient direction (theta)
+    new theta' = theta-theta*
+    for theta', retreive displacement vectors to vote for reference point.
+    
+    Peaks in the Hough space (X,Y, theta*) is reference point with most 
+    supporting edges
+    
+    Same can be done for scale(S) if scale is unknown
+
+
+%% Application in recognition:
+
+
+training images:
+  Instead of indexing displacements by gradientorientation, index by 
+  "visual codeword"
+  
+  1- Build codebook of patches around extracted interst points using clustering
+  2- Map the patch around each interest point to closest codebook entry
+  3- For each codebook entry, store all displacements relative to object center

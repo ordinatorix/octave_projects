@@ -15,6 +15,7 @@ figure; imshow(lena); title('Original Image, BW');
 [gmag gdir] = imgradient(gx, gy);
 edge_mag = gmag / (4 * sqrt(2));
 figure; imshow(edge_mag); title('edge detection via magnitude'); # gmag = sqrt(gx^2 + gy^2), so: [0, (4*sqrt(2))]
+imwrite(edge_mag, 'lena_edge_detection.jpg');
 
 # Using Canny edge opereator
 lena_edge = edge(lena, 'canny');
