@@ -5,7 +5,7 @@ clc; clear all; close all;
 #pkg load image;
 
 # Read & show Lena image
-lena = imread('../images/lena.jpg');
+lena = imread('../images/nautical_map.jpg');
 figure, imshow(lena), title('original Lena image, BW');
 
 # Make a blured/smoothed version of the picture

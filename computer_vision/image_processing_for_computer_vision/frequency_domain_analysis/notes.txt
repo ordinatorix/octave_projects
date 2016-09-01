@@ -1,0 +1,8 @@
+Fourier transform and convolution:
+  Convolution in spacial domain is the same as a multiplication in frequency domain.
+  Important in aliasing.
+  multiplication in the spacial domain is a convolution in frequency domain
+   for faster processing, instead of doing a convolution I can apply a FFT to my spacial function, 
+   and multiply the result. applying an inverse fourier transform would give the result of the convolution.
+   
+   Do not cut out the high frequency in the frequency domain, it will give out a ringing.

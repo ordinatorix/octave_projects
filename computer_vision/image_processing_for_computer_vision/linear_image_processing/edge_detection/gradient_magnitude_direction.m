@@ -9,7 +9,7 @@ endfunction
 pkg load image;
 
 #Load and convert image to double type, range [0 1] for convenience
-img = double(imread('../images/lena.jpg')) / 255.;
+img = double(imread('../images/nautical_map.jpg')) / 255.;
 figure(1);
 imshow(img); #assumes [0 1] range for double imagesc
 
